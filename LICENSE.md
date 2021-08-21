@@ -1,6 +1,6 @@
 # License
 
-MaybeCube by [Martin Budden](https://github.com/martinbudden)
+This assembly by [Martin Budden](https://github.com/martinbudden)
 is licensed under the
 [Creative Commons - Attribution - Non-Commercial - Share Alike license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 (CC BY-NC-SA 4.0)<br />

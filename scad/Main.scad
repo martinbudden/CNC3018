@@ -1,5 +1,7 @@
 //!# 3018 CNC with linear rails
-//
+//!
+//!This is just a rough sketch of the frame using linear rails and hidden joints.
+
 include <global_defs.scad>
 include <NopSCADlib/core.scad>
 

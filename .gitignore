@@ -36,7 +36,7 @@ CNC3018/tmp/
 CNC3018/*.html
 # change to ! once released
 CNC3018/readme.md
-CNC3018/assemblies/main_assembled.png
+!CNC3018/assemblies/main_assembled.png
 #!CNC3018/assemblies/*.png
 CNC3018/assemblies/*_diff.png
 #!CNC3018/dxfs/*.dxf
