@@ -1,16 +1,16 @@
+//!# 3018 CNC with linear rails
+//
 include <global_defs.scad>
 include <NopSCADlib/core.scad>
 
-include <CNC3018.scad>
-
-include <Parameters_Main.scad>
-
+use <base.scad>
+use <gantry.scad>
 
 module main_assembly()
 assembly("main", big=true) {
-    assert(!is_undef(_variant));
 
-    FinalAssembly();
+    Base_assembly();
+    Gantry_assembly();
 }
 
 if ($preview)
