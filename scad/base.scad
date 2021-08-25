@@ -81,10 +81,10 @@ module baseMotorAssembly(leadScrewOffset) {
     }
 }
 
-module Base_assembly()
+module Base_assembly(explodeBase=-50)
 assembly("Base", big=true) {
     if (is_undef(_xRodLength))
-        base3Assembly();
+        base3Assembly(explodeBase=explodeBase);
     else
         base1Assembly();
 }
@@ -157,7 +157,7 @@ module base2Assembly() {
     baseMotorAssembly(leadScrewOffset);
 }
 
-module base3Assembly() {
+module base3Assembly(explodeBase=-50) {
 
     yRailOffsetX = 50;
     xBoltHoles = [eSize/2, 3*eSize/2, 5*eSize/2, 7*eSize/2, eX - eSize/2, eX - 3*eSize/2, eX - 5*eSize/2, eX - 7*eSize/2];
@@ -202,7 +202,7 @@ module base3Assembly() {
                         carriage(MGN12H_carriage, end_colour="green", wiper_colour="red");
                 }
 
-    explode(-50)
+    explode(explodeBase)
         BaseAL();
     explode([0, explode + 50, 0])
         translate([0, 2*eSize, 0])
